@@ -1,0 +1,81 @@
+<style>
+    #p_panjabi li.product {
+        border: 1px solid #e5e5e5;
+        border-radius: 10px;
+        padding: 5px;
+        text-align: center;
+        background: #ffffff;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        transition: all 0.3s ease;
+        overflow: hidden;
+        position: relative;
+    }
+
+    /* Hover এ box আর নড়বে না */
+    #p_panjabi li.product:hover {
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        border-color: #56AB91;
+    }
+
+    /* Image effect */
+    #p_panjabi li.product img {
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    #p_panjabi li.product:hover img {
+        transform: scale(1.05);
+    }
+
+    #p_panjabi .review-rating {
+        display: none;
+    }
+
+    #p_panjabi .button {
+        margin: 0 0 0 0;
+    }
+
+    #weight-%e2%9c%85 {
+        display: none;
+    }
+
+    /* Variation hide */
+    #p_panjabi li.product .variations_form,
+    #p_panjabi li.product .variations {
+        display: none !important;
+    }
+
+    /* Product description 2 line limit */
+    #p_panjabi li.product .woocommerce-loop-product__title,
+    #p_panjabi li.product .woocommerce-product-details__short-description {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;   /* কয় লাইন দেখাবে */
+        -webkit-box-orient: vertical;
+        min-height: 3em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+    }
+/* Product grid এ শুধু right-left gap কমানো */
+#p_panjabi ul.products {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    column-gap: 10px;  /* শুধু ডান-বাম gap */
+    row-gap: 30px;     /* উপরে-নিচে আগের মতো gap */
+}
+#p_panjabi li.product .button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+#p_panjabi li.product .price {
+    margin-top: 2px;   /* description এর সাথে gap কমাবে */
+    margin-bottom: 5px; /* button এর আগে একটু gap রাখবে */
+    display: block;
+}
+
+</style>
