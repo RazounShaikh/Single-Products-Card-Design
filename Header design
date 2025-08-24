@@ -1,0 +1,38 @@
+<style>
+/* Menu wrapper */
+#menu-1-bbdca14 {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  border-left: 2px solid #fff;   /* শুরুর দিকে border */
+  border-right: 2px solid #fff;  /* শেষে border */
+}
+
+/* প্রতিটি মেনু আইটেম */
+#menu-1-bbdca14 li {
+  list-style: none;
+  padding: 10px 20px;
+  position: relative;
+  border-right: 2px solid #fff; /* প্রতিটি আইটেমের পর লাইন */
+}
+
+/* শেষ আইটেমের border-right বাদ */
+#menu-1-bbdca14 li:last-child {
+  border-right: none;
+}
+
+/* লিংক ডিজাইন */
+#menu-1-bbdca14 li a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+#menu-1-bbdca14 li a:hover {
+  color: #ffd700; /* Hover এ সোনালী রঙ */
+}
+
+
+</style>
