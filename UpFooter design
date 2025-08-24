@@ -1,0 +1,55 @@
+<div style="width:100%; background:##F0F2BD; padding:20px 0; display:flex; flex-wrap:wrap; justify-content:space-between; max-width:1200px; margin:0 auto; padding:0 15px;">
+
+  <!-- Item 1 -->
+  <div style="display:flex; align-items:center; flex:1 1 250px; min-width:250px; margin-bottom:20px; transition:all 0.3s ease;">
+    <div style="min-width:60px; height:60px; border-radius:50%; border:2px solid #4b352a; display:flex; align-items:center; justify-content:center; font-size:24px; color:#C97841; margin-right:12px; transition:all 0.3s ease;" 
+         onmouseover="this.style.background='#C97841';this.style.color='#fff';this.style.transform='scale(1.1)';" 
+         onmouseout="this.style.background='transparent';this.style.color='#C97841';this.style.transform='scale(1)';">
+      <i class="fas fa-thumbs-up"></i>
+    </div>
+    <div>
+      <span style="font-weight:bold; font-size:16px;">হাই-কোয়ালিটি পণ্য</span><br>
+      <span style="font-size:14px; color:#555;">Enjoy top quality items for less</span>
+    </div>
+  </div>
+
+  <!-- Item 2 -->
+  <div style="display:flex; align-items:center; flex:1 1 250px; min-width:250px; margin-bottom:20px; transition:all 0.3s ease;">
+    <div style="min-width:60px; height:60px; border-radius:50%; border:2px solid #4b352a; display:flex; align-items:center; justify-content:center; font-size:24px; color:#C97841; margin-right:12px; transition:all 0.3s ease;" 
+         onmouseover="this.style.background='#C97841';this.style.color='#fff';this.style.transform='scale(1.1)';" 
+         onmouseout="this.style.background='transparent';this.style.color='#C97841';this.style.transform='scale(1)';">
+      <i class="fas fa-headset"></i>
+    </div>
+    <div>
+      <span style="font-weight:bold; font-size:16px;">24/7 লাইভ চ্যাট</span><br>
+      <span style="font-size:14px; color:#555;">Get instant assistance whenever you need it</span>
+    </div>
+  </div>
+
+  <!-- Item 3 -->
+  <div style="display:flex; align-items:center; flex:1 1 250px; min-width:250px; margin-bottom:20px; transition:all 0.3s ease;">
+    <div style="min-width:60px; height:60px; border-radius:50%; border:2px solid #4b352a; display:flex; align-items:center; justify-content:center; font-size:24px; color:#C97841; margin-right:12px; transition:all 0.3s ease;" 
+         onmouseover="this.style.background='#C97841';this.style.color='#fff';this.style.transform='scale(1.1)';" 
+         onmouseout="this.style.background='transparent';this.style.color='#C97841';this.style.transform='scale(1)';">
+      <i class="fas fa-truck"></i>
+    </div>
+    <div>
+      <span style="font-weight:bold; font-size:16px;">এক্সপ্রেস শিপিং</span><br>
+      <span style="font-size:14px; color:#555;">Fast & reliable delivery options</span>
+    </div>
+  </div>
+
+  <!-- Item 4 -->
+  <div style="display:flex; align-items:center; flex:1 1 250px; min-width:250px; margin-bottom:20px; transition:all 0.3s ease;">
+    <div style="min-width:60px; height:60px; border-radius:50%; border:2px solid #4b352a; display:flex; align-items:center; justify-content:center; font-size:24px; color:#C97841; margin-right:12px; transition:all 0.3s ease;" 
+         onmouseover="this.style.background='#C97841';this.style.color='#fff';this.style.transform='scale(1.1)';" 
+         onmouseout="this.style.background='transparent';this.style.color='#C97841';this.style.transform='scale(1)';">
+      <i class="fas fa-lock"></i>
+    </div>
+    <div>
+      <span style="font-weight:bold; font-size:16px;">সিকিউর পেমেন্ট</span><br>
+      <span style="font-size:14px; color:#555;">Multiple safe payment methods</span>
+    </div>
+  </div>
+
+</div>
