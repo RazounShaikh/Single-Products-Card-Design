@@ -1,0 +1,32 @@
+// ==== 1. Single Product Page: Add Order Now Button ====
+add_action( 'woocommerce_after_add_to_cart_button', 'add_order_now_button_single' );
+function add_order_now_button_single() {
+    global $product;
+
+    // For simple products
+    if ( $product->is_type( 'simple' ) ) {
+        $checkout_url = wc_get_checkout_url() . '?add-to-cart=' . $product->get_id();
+        echo '<a href="' . esc_url( $checkout_url ) . '" class="button order-now-btn" style="margin-left:10px;">Order Now</a>';
+    }
+
+    // For variable products
+    if ( $product->is_type( 'variable' ) ) {
+        echo '<button type="submit" class="single_add_to_cart_button button alt order-now-btn" formaction="' . esc_url( wc_get_checkout_url() ) . '" style="margin-left:10px;">Order Now</button>';
+    }
+}
+
+// ==== 2. Shop/Archive Page: Add Order Now Button ====
+add_action( 'woocommerce_after_shop_loop_item', 'add_order_now_button_archive', 20 );
+function add_order_now_button_archive() {
+    global $product;
+
+    if ( $product->is_type( 'simple' ) ) {
+        $checkout_url = wc_get_checkout_url() . '?add-to-cart=' . $product->get_id();
+        echo '<a href="' . esc_url( $checkout_url ) . '" class="button order-now-btn-archive" style="margin-top:5px; display:block;">Order Now</a>';
+    }
+
+    if ( $product->is_type( 'variable' ) ) {
+        $product_url = get_permalink( $product->get_id() );
+        echo '<a href="' . esc_url( $product_url ) . '" class="button order-now-btn-archive" style="margin-top:5px; display:block;">Order Now</a>';
+    }
+}
