@@ -1,0 +1,97 @@
+<style>
+    #newArrival li.product {
+        border: 1px solid #e5e5e5;
+        border-radius: 10px;
+        padding: 5px;
+        text-align: center;
+        background: #edf7ef;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        transition: all 0.3s ease;
+        overflow: hidden;
+        position: relative;
+    }
+
+    /* Hover এ box আর নড়বে না */
+    #newArrival li.product:hover {
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        border-color: #513A0A;
+    }
+
+    /* Image effect */
+    #newArrival li.product img {
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    #newArrival li.product:hover img {
+        transform: scale(1.05);
+    }
+
+    #newArrival .review-rating {
+        display: none;
+    }
+
+    #newArrival .button {
+        margin: 0 0 0 0;
+    }
+
+    #weight-%e2%9c%85 {
+        display: none;
+    }
+
+    /* Variation hide */
+    #newArrival li.product .variations_form,
+    #newArrival li.product .variations {
+        display: none !important;
+    }
+
+    /* Product description 2 line limit */
+    #newArrival li.product .woocommerce-loop-product__title,
+    #newArrival li.product .woocommerce-product-details__short-description {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;   /* কয় লাইন দেখাবে */
+        -webkit-box-orient: vertical;
+        min-height: 1em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+    }
+/* Product grid এ শুধু right-left gap কমানো */
+#newArrival ul.products {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    column-gap: 10px;  /* শুধু ডান-বাম gap */
+    row-gap: 30px;     /* উপরে-নিচে আগের মতো gap */
+}
+#newArrival li.product .button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+#newArrival li.product .price {
+    margin-top: 2px;   /* description এর সাথে gap কমাবে */
+    margin-bottom: 5px; /* button এর আগে একটু gap রাখবে */
+    display: block;
+}
+/* Default (Desktop) */
+#newArrival ul.products {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    column-gap: 10px;
+    row-gap: 30px;
+}
+
+/* Mobile view (max-width: 768px) এ 2 column */
+@media (max-width: 768px) {
+    #newArrival ul.products {
+        grid-template-columns: repeat(2, 1fr) !important;
+          row-gap: 05px !important; 
+    }
+}
+
+
+</style>
